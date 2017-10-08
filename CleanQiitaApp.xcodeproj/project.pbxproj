@@ -11,6 +11,11 @@
 		E51AC1141F8A8AE1003EC059 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1131F8A8AE1003EC059 /* UserEntity.swift */; };
 		E51AC1161F8A8B02003EC059 /* GroupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1151F8A8B02003EC059 /* GroupEntity.swift */; };
 		E51AC1181F8A8B1B003EC059 /* ItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1171F8A8B1B003EC059 /* ItemEntity.swift */; };
+		E51AC11D1F8A8C3E003EC059 /* AuthNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC11C1F8A8C3E003EC059 /* AuthNetworkRequest.swift */; };
+		E51AC11F1F8A8C5A003EC059 /* AllItemNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC11E1F8A8C5A003EC059 /* AllItemNetworkRequest.swift */; };
+		E51AC1211F8A8C7F003EC059 /* ItemNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1201F8A8C7F003EC059 /* ItemNetworkRequest.swift */; };
+		E51AC1231F8A8C97003EC059 /* StockNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1221F8A8C97003EC059 /* StockNetworkRequest.swift */; };
+		E51AC1251F8A8CB7003EC059 /* UserItemNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1241F8A8CB7003EC059 /* UserItemNetworkRequest.swift */; };
 		E58D42D71F8A7E6A000108C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D42D61F8A7E6A000108C4 /* AppDelegate.swift */; };
 		E58D42D91F8A7E6A000108C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D42D81F8A7E6A000108C4 /* ViewController.swift */; };
 		E58D42DC1F8A7E6A000108C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58D42DA1F8A7E6A000108C4 /* Main.storyboard */; };
@@ -43,6 +48,11 @@
 		E51AC1131F8A8AE1003EC059 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
 		E51AC1151F8A8B02003EC059 /* GroupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEntity.swift; sourceTree = "<group>"; };
 		E51AC1171F8A8B1B003EC059 /* ItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEntity.swift; sourceTree = "<group>"; };
+		E51AC11C1F8A8C3E003EC059 /* AuthNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkRequest.swift; sourceTree = "<group>"; };
+		E51AC11E1F8A8C5A003EC059 /* AllItemNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllItemNetworkRequest.swift; sourceTree = "<group>"; };
+		E51AC1201F8A8C7F003EC059 /* ItemNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemNetworkRequest.swift; sourceTree = "<group>"; };
+		E51AC1221F8A8C97003EC059 /* StockNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockNetworkRequest.swift; sourceTree = "<group>"; };
+		E51AC1241F8A8CB7003EC059 /* UserItemNetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserItemNetworkRequest.swift; sourceTree = "<group>"; };
 		E58D42D31F8A7E6A000108C4 /* CleanQiitaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanQiitaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D42D61F8A7E6A000108C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D42D81F8A7E6A000108C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +106,26 @@
 			children = (
 			);
 			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		E51AC11A1F8A8C13003EC059 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				E51AC11B1F8A8C23003EC059 /* Request */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		E51AC11B1F8A8C23003EC059 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				E51AC11C1F8A8C3E003EC059 /* AuthNetworkRequest.swift */,
+				E51AC11E1F8A8C5A003EC059 /* AllItemNetworkRequest.swift */,
+				E51AC1201F8A8C7F003EC059 /* ItemNetworkRequest.swift */,
+				E51AC1221F8A8C97003EC059 /* StockNetworkRequest.swift */,
+				E51AC1241F8A8CB7003EC059 /* UserItemNetworkRequest.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		E58D42CA1F8A7E6A000108C4 = {
@@ -155,6 +185,7 @@
 		E58D43041F8A84B0000108C4 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
+				E51AC11A1F8A8C13003EC059 /* DataStore */,
 				E58D43051F8A84CE000108C4 /* Entity */,
 			);
 			name = DataLayer;
@@ -306,11 +337,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E51AC11D1F8A8C3E003EC059 /* AuthNetworkRequest.swift in Sources */,
+				E51AC1211F8A8C7F003EC059 /* ItemNetworkRequest.swift in Sources */,
+				E51AC11F1F8A8C5A003EC059 /* AllItemNetworkRequest.swift in Sources */,
 				E58D43071F8A84F6000108C4 /* AccessTokenEntity.swift in Sources */,
 				E51AC1181F8A8B1B003EC059 /* ItemEntity.swift in Sources */,
 				E58D42D91F8A7E6A000108C4 /* ViewController.swift in Sources */,
 				E58D42D71F8A7E6A000108C4 /* AppDelegate.swift in Sources */,
 				E51AC1141F8A8AE1003EC059 /* UserEntity.swift in Sources */,
+				E51AC1251F8A8CB7003EC059 /* UserItemNetworkRequest.swift in Sources */,
+				E51AC1231F8A8C97003EC059 /* StockNetworkRequest.swift in Sources */,
 				E51AC1161F8A8B02003EC059 /* GroupEntity.swift in Sources */,
 				E51AC1121F8A8AB1003EC059 /* TagEntity.swift in Sources */,
 			);
