@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E51AC1121F8A8AB1003EC059 /* TagEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1111F8A8AB1003EC059 /* TagEntity.swift */; };
+		E51AC1141F8A8AE1003EC059 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1131F8A8AE1003EC059 /* UserEntity.swift */; };
+		E51AC1161F8A8B02003EC059 /* GroupEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1151F8A8B02003EC059 /* GroupEntity.swift */; };
+		E51AC1181F8A8B1B003EC059 /* ItemEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51AC1171F8A8B1B003EC059 /* ItemEntity.swift */; };
 		E58D42D71F8A7E6A000108C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D42D61F8A7E6A000108C4 /* AppDelegate.swift */; };
 		E58D42D91F8A7E6A000108C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D42D81F8A7E6A000108C4 /* ViewController.swift */; };
 		E58D42DC1F8A7E6A000108C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58D42DA1F8A7E6A000108C4 /* Main.storyboard */; };
@@ -14,6 +18,7 @@
 		E58D42E11F8A7E6A000108C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E58D42DF1F8A7E6A000108C4 /* LaunchScreen.storyboard */; };
 		E58D42EC1F8A7E6A000108C4 /* CleanQiitaAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D42EB1F8A7E6A000108C4 /* CleanQiitaAppTests.swift */; };
 		E58D42F71F8A7E6A000108C4 /* CleanQiitaAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D42F61F8A7E6A000108C4 /* CleanQiitaAppUITests.swift */; };
+		E58D43071F8A84F6000108C4 /* AccessTokenEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E58D43061F8A84F6000108C4 /* AccessTokenEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E51AC1111F8A8AB1003EC059 /* TagEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagEntity.swift; sourceTree = "<group>"; };
+		E51AC1131F8A8AE1003EC059 /* UserEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEntity.swift; sourceTree = "<group>"; };
+		E51AC1151F8A8B02003EC059 /* GroupEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupEntity.swift; sourceTree = "<group>"; };
+		E51AC1171F8A8B1B003EC059 /* ItemEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEntity.swift; sourceTree = "<group>"; };
 		E58D42D31F8A7E6A000108C4 /* CleanQiitaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanQiitaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D42D61F8A7E6A000108C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E58D42D81F8A7E6A000108C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,7 @@
 		E58D42F21F8A7E6A000108C4 /* CleanQiitaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanQiitaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E58D42F61F8A7E6A000108C4 /* CleanQiitaAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanQiitaAppUITests.swift; sourceTree = "<group>"; };
 		E58D42F81F8A7E6A000108C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E58D43061F8A84F6000108C4 /* AccessTokenEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E51AC10F1F8A8764003EC059 /* DomainLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DomainLayer;
+			sourceTree = "<group>";
+		};
+		E51AC1101F8A8771003EC059 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
 		E58D42CA1F8A7E6A000108C4 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +121,9 @@
 		E58D42D51F8A7E6A000108C4 /* CleanQiitaApp */ = {
 			isa = PBXGroup;
 			children = (
+				E51AC1101F8A8771003EC059 /* PresentationLayer */,
+				E51AC10F1F8A8764003EC059 /* DomainLayer */,
+				E58D43041F8A84B0000108C4 /* DataLayer */,
 				E58D42D61F8A7E6A000108C4 /* AppDelegate.swift */,
 				E58D42D81F8A7E6A000108C4 /* ViewController.swift */,
 				E58D42DA1F8A7E6A000108C4 /* Main.storyboard */,
@@ -123,6 +150,26 @@
 				E58D42F81F8A7E6A000108C4 /* Info.plist */,
 			);
 			path = CleanQiitaAppUITests;
+			sourceTree = "<group>";
+		};
+		E58D43041F8A84B0000108C4 /* DataLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E58D43051F8A84CE000108C4 /* Entity */,
+			);
+			name = DataLayer;
+			sourceTree = "<group>";
+		};
+		E58D43051F8A84CE000108C4 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E58D43061F8A84F6000108C4 /* AccessTokenEntity.swift */,
+				E51AC1111F8A8AB1003EC059 /* TagEntity.swift */,
+				E51AC1131F8A8AE1003EC059 /* UserEntity.swift */,
+				E51AC1151F8A8B02003EC059 /* GroupEntity.swift */,
+				E51AC1171F8A8B1B003EC059 /* ItemEntity.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +306,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E58D43071F8A84F6000108C4 /* AccessTokenEntity.swift in Sources */,
+				E51AC1181F8A8B1B003EC059 /* ItemEntity.swift in Sources */,
 				E58D42D91F8A7E6A000108C4 /* ViewController.swift in Sources */,
 				E58D42D71F8A7E6A000108C4 /* AppDelegate.swift in Sources */,
+				E51AC1141F8A8AE1003EC059 /* UserEntity.swift in Sources */,
+				E51AC1161F8A8B02003EC059 /* GroupEntity.swift in Sources */,
+				E51AC1121F8A8AB1003EC059 /* TagEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
